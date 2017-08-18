@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HeroTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-08-17T11:28:36" hostname="albert-HP-ProBook-450-G1" time="0.006">
+  <properties/>
+  <testcase name="Hero_instanciatesCorrectly_true" classname="HeroTest" time="0.003"/>
+  <testcase name="Hero_instanciatesWithName_String" classname="HeroTest" time="0.0"/>
+  <testcase name="Hero_instanciatesWithSuperPower_String" classname="HeroTest" time="0.0"/>
+  <testcase name="getAge_heroesInstanciateWithAge_0" classname="HeroTest" time="0.0"/>
+  <testcase name="Hero_instanciatesWithWeakness_String" classname="HeroTest" time="0.0"/>
+  <testcase name="getId_herosInstanciateWithAnId_1" classname="HeroTest" time="0.0"/>
+  <testcase name="find_returnsHeroWithTheSameId_secondHero" classname="HeroTest" time="0.0"/>
+  <testcase name="all_returnsInstancesOfHero_true" classname="HeroTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
