@@ -2,9 +2,36 @@
 <html>
   <head>
     <title>Heroes</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/solar/bootstrap.min.css" rel="stylesheet" integrity="sha384-GC77SCz5O11gVtXl0sSfbQYEWSSznn1wPDHgL1BGUTFU9iEoUrG4IOJa5CBVY8kR" crossorigin="anonymous">
   </head>
   <body>
+
+  <!-- This is the beginning of the nav-bar -->
+      <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">The Heroes Initiative</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/squads">All Squads <span class="sr-only">(current)</span></a></li>
+            <li><a href="/squads/new">New Squad</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/heros">Heroes</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- End of navbar -->
+
     <div class="container">
       #parse( $template )
     </div>
