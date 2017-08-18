@@ -1,0 +1,19 @@
+<div class="page-header">
+    <h1>Join A Team to Fight a Cause</h1>
+</div>
+
+<div class="row">
+    #foreach ($squad in $squads)
+        <div class="col-md-3">
+            <p><a href="/squads/$squad.getId()">$squad.getName()</a></p>
+        </div>
+    #end
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>New Squad</h2>
+        <p>If you feel like you have so much more to fight for, make your own squad and recruit heroes!</p>
+        <p>Fill out <a href="/squads/new">this</a> form.</p>
+    </div>
+</div>
