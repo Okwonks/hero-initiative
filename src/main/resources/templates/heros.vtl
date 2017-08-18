@@ -3,8 +3,8 @@
 #if ($heros)
     <ul>
         #foreach ($hero in $heros)
-            <p><a href="/heros/$hero.getId()">$hero.getName()</a></p>
-        #else
+            <h4><a href="/heros/$hero.getId()">$hero.getName()</a></h4>
+        #end
     </ul>
 #else
     <p>No heros!</p>
