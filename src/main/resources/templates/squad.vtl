@@ -1,0 +1,18 @@
+<h1>$squad.getName()</h1>
+
+<h2>This is our cause:</h2>
+<h4>$squad.getCause()</h4>
+
+<div class="row">
+    <div class="col-md-3">
+        <h4>Anything appealing?</h4>
+        <p><a href="/squads/$squad.getId()/heros/new">Join Us</a></p>
+    </div>
+    <div class="col-md-3">
+        <ol>
+          #foreach ($hero in squad.getHero())
+             <li><a href="/heros/$hero.getId()">$hero.getName()</a></li>
+          #end
+        </ol>  
+    </div>
+</div>
