@@ -56,7 +56,7 @@ public class App {
 
 
         /** This section deals with the Squad the routing and template rendering **/
-        get("/squad/new", (request, response) -> {
+        get("/squads/new", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/squad-form.vtl");
             return new ModelAndView(model, layout);
