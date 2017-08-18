@@ -10,7 +10,7 @@
     </div>
     <div class="col-md-3">
         <ol>
-          #foreach ($hero in squad.getHero())
+          #foreach ($hero in $squad.getHero())
              <li><a href="/heros/$hero.getId()">$hero.getName()</a></li>
           #end
         </ol>  
