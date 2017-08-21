@@ -6,12 +6,16 @@
 <div class="row">
     <div class="col-md-3">
         <h4>Anything appealing?</h4>
-        <p><a href="/squads/$squad.getId()/heros/new">Join Us</a></p>
+        <h5><a href="/squads/$squad.getId()/heros/new">Join Us</a></h5>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-3 well">
+        <div class="thumbnail">
+            <img src="/images/thesquad.jpg" alt="$squad.getName()'s image">
+        </div>
+        <h3>Here are some our members</h3>
         <ol>
           #foreach ($hero in $squad.getHero())
-             <li><a href="/heros/$hero.getId()">$hero.getName()</a></li>
+             <li><h5><a href="/heros/$hero.getId()">$hero.getName()</a></h5></li>
           #end
         </ol>  
     </div>
