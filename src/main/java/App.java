@@ -10,6 +10,17 @@ public class App {
         staticFileLocation("/public");
         String layout = "templates/layout.vtl";
 
+        /** For Heroku deployment **/
+        ProcessBuilder process = new ProcessBuilder();
+        Integer port;
+        if (process.environment().get("PORT") != null) {
+            port = Integer.parseInt(process.environment().get("PORT"));
+        } else {
+            port = 4567;
+        }
+
+        setPort(port);
+
         get("/", (request, reponse) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "templates/index.vtl");
@@ -93,16 +104,5 @@ public class App {
             model.put("template", "templates/squad-hero-form.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-
-        /** For Heroku deployment **/
-        ProcessBuilder process = new ProcessBuilder();
-        Integer port;
-        if (process.environment().get("PORT") != null) {
-            port = Integer.parseInt(process.environment().get("PORT"));
-        } else {
-            port = 4567;
-        }
-
-        setPort(port);
     }
 }
