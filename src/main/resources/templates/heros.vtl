@@ -1,11 +1,40 @@
 <h1>Our Mighty Heroes!</h1>
 
-#if ($heros)
-    <ul>
-        #foreach ($hero in $heros)
-            <h4><a href="/heros/$hero.getId()">$hero.getName()</a></h4>
+<div class="row">
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img class="img-responsive" src="/images/superman.jpg" alt="superman">
+            <div class="caption">
+                <h3>Be a Hero!</h3>
+                <hr>
+                <p>Join a squad and make a difference. Be the best in your squad! So much awaits...</p>
+                <p>Found out more about the squads <a href="/squads">here</a>.</p><br>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="thumbnail">
+            <img class="img-responsive" src="/images/deadpool.jpg" alt="deadpool">
+            <div class="caption">
+                <h3>Secret Identity</h3>
+                <hr>
+                <p>Keep your identity a secret if you want to keep those around you safe. And we won't let people in on your weakness ;)</p>
+                <p>Sign up to a <a href="/squads">squad</a> and be a hero!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row well">
+    <div class="col-md-8 col-md-offset-2">
+        #if ($heros)
+            <ul>
+                #foreach ($hero in $heros)
+                    <h3><a href="/heros/$hero.getId()">$hero.getName()</a></h3>
+                #end
+            </ul>
+        #else
+            <p>No heros!</p>
         #end
-    </ul>
-#else
-    <p>No heros!</p>
-#end
+    </div>
+</div>
