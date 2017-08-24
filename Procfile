@@ -1,0 +1,1 @@
+web: ./build/install/javaip2/bin/javaip2
