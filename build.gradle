@@ -1,9 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "javaip"
+archivesBaseName = "javaip-ip2"
 version = '1.0'
 mainClassName = 'App'
+applicationName = 'javaip'
 
 repositories {
     mavenCentral()
