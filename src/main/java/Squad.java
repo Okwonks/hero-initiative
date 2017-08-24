@@ -1,5 +1,6 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Random;
 
 /**The Squad Object
  * This is where a Hero can join a cause to fight for
@@ -13,6 +14,9 @@ import java.util.ArrayList;
     private int mId;
     private List<Hero> mHeros;
     private int mMemebers;
+    private Random randomImg = new Random();
+    String[] images = {"/images/squad.jpg", "/images/assemble.png", "/images/bikesquad.jpg", "/images/brokensquad.jpg", "/images/lovesquad.png"};
+
     public Squad(String name, String cause) {
         mName = name;
         instances.add(this);
@@ -20,6 +24,11 @@ import java.util.ArrayList;
         mHeros = new ArrayList<Hero>();
         mMemebers = new ArrayList<Hero>().size();
         mCause = cause;
+    }
+
+    public String getImg() {
+        String imageLink = images[randomImg.nextInt(images.length)];
+        return imageLink;
     }
 
     public String getName() {
