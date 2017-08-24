@@ -12,5 +12,7 @@ Users can create teams that will be a show of what social injustice they would l
 ## Running Tests
 * `gradle test`
 
+### Deployed site
+To visit the deployed site click [here](https://heroes-unite-mesa.herokuapp.com/).
 
 WillisCode | [Moringa](moringaschool.com)
