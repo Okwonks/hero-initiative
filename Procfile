@@ -1,1 +1,1 @@
-web: ./build/install/javaip2/bin/javaip2
+web: ./build/install/javaip/bin/javaip

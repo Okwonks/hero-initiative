@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "javaip2"
+archivesBaseName = "javaip"
 version = '1.0'
 mainClassName = 'App'
 
